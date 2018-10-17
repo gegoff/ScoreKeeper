@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="7">
+            <LinearLayout
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:paddingTop="20dp"
+                    android:text="TEAM 1"/>
+
+                <TextView
+                    android:id="@+id/teamOneScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="56sp"
+                    android:paddingTop="20dp"
+                    android:text="0"/>
+                <Button
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="TOUCHDOWN +6"
+                    android:onClick="touchdownO"
+                    android:layout_gravity="center"/>
+                <Button
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="EPO"
+                    android:text="EXTRA POINT +1"
+                    android:layout_gravity="center"/>
+                <Button
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:text="CONVERSION +2"
+                    android:onClick="CO"
+                    android:layout_gravity="center"/>
+                <Button
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:text="FIELD GOAL +3"
+                    android:onClick="FGO"
+                    android:layout_gravity="center"/>
+                <Button
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:text="SAFETY +2"
+                    android:onClick="SO"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:paddingTop="20dp"
+                    android:text="TEAM 2"/>
+
+                <TextView
+                    android:id="@+id/teamTwoScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="56sp"
+                    android:paddingTop="20dp"
+                    android:textAlignment="center"
+                    android:text="0"/>
+                <Button
+                    android:id="@+id/tbutton1"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:text="TOUCHDOWN +6"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:onClick="touchdownT"/>
+                <Button
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:text="EXTRA POINT +1"
+                    android:onClick="EPT"
+                    android:layout_gravity="center"/>
+                <Button
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:text="CONVERSION +2"
+                    android:onClick="CT"
+                    android:layout_gravity="center"/>
+                <Button
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:text="FIELD GOAL +3"
+                    android:onClick="FGT"
+                    android:layout_gravity="center"/>
+                <Button
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:text="SAFETY +2"
+                    android:onClick="ST"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:onClick="reset"
+            />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
